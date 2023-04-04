@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat&family=DynaPuff&family=Montserrat:wght@500&display=swap");
+
+body {
+  margin: 0;
+  font-family: "DynaPuff", cursive;
+}
+
+::-webkit-input-placeholder {
+  font-family: "DynaPuff", cursive;
+}
+
+ul,li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body,html,#root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+

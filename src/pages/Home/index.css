@@ -1,0 +1,80 @@
+#home {
+    height: calc(100% - 60px);
+    padding-top: 16px;
+    box-sizing: border-box;
+    width: 90%;
+    margin: 0 auto;
+  }
+  
+  #home .container {
+    height: calc(100% - 40px);
+    width: 100%;
+    margin: 0 auto;
+    padding: 24px 0 0;
+    box-sizing: border-box;
+    display: flex;
+  }
+
+.tag-wrap {
+    width: 160px;
+    padding-right: 30px;
+    margin-right:24px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    overflow: auto;
+    padding-top: 12px;
+    border-right: 4px double #333;
+    box-sizing: border-box;
+}
+
+.card-wrap {
+    flex: 1;
+    height: 100%;
+    overflow: auto;
+}
+
+.card-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 30px;
+}
+
+.tag-wrap div{
+    padding: 6px 12px;
+    background: #fff;
+    margin-bottom: 8px;
+    border-radius: 17px;
+    cursor: pointer;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.tag-wrap div:hover{
+    background: #000;
+    color:#fff;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tag-wrap .active {
+    background: #000;
+    color:#fff;
+    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aiWebsits {
+    margin-right: 8px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ipt {
+    width: 600px;
+}

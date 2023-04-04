@@ -1,0 +1,47 @@
+
+#chatGpt {
+    height: calc(100% - 60px);
+    overflow: auto;
+    width: 90%;
+    margin: 0 auto;
+}
+.iframe-wrap {
+    width: 100%;
+    height: 300px;
+}
+
+#chatGpt .header {
+    width: 90%;
+    position: fixed;
+    bottom: 24px;
+    display: flex;
+    justify-content: center;
+}
+.header .chatWrap {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header .chatWrap .ipt {
+    width: 100%;
+}
+
+.header .chatWrap img {
+    width: 38px;
+    margin-right: 8px;
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+ 
+ @keyframes spin {
+    from {
+       transform:rotate(0deg);
+    }
+    to {
+       transform:rotate(360deg);
+    }
+ }

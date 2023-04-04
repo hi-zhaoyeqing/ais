@@ -1,0 +1,39 @@
+#aiImg {
+  width: 100%;
+  height: calc(100% - 60px);
+  padding: 24px 5%;
+  box-sizing: border-box;
+  overflow: auto;
+}
+
+.my-masonry-grid {
+  display: flex;
+  margin-left: -16px; /* 去除首尾元素的左右空白 */
+  width: auto;
+}
+
+.my-masonry-grid_column {
+  padding-left: 16px; /* 添加每个元素的左边距 */
+  background-clip: padding-box;
+}
+
+.my-masonry-grid_column > div {
+  margin-bottom: 16px; /* 添加每个元素的下边距 */
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.my-masonry-grid_column > div > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+}
+.my-masonry-grid_column > div > img:hover {
+  transition: all 0.3s;
+  transform: scale(1.2);
+}
+
+
+
+

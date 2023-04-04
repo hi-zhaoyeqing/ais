@@ -1,0 +1,27 @@
+#urlHandler{
+    padding: 24px;
+    width: 80%;
+    margin: 0 auto;
+    height: calc(100% - 108px);
+}
+
+#urlHandler .container {
+    height: calc(100% - 80px);
+    padding-top: 24px;
+    box-sizing: border-box;
+}
+
+#urlHandler h2 {
+    text-align: center;
+}
+
+#urlHandler .ipt-wrap{
+    width: 100%;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.qrcode {
+    text-align: center;
+}

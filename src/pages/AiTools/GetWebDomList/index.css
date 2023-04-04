@@ -1,0 +1,32 @@
+#GetWebDomList{
+    padding: 24px;
+    width: 80%;
+    margin: 0 auto;
+    height: calc(100% - 108px);
+}
+
+#GetWebDomList .container {
+    height: calc(100% - 80px);
+}
+
+#GetWebDomList pre {
+    width: 100%;
+    height: 100%;
+}
+
+#GetWebDomList h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+#GetWebDomList h2 {
+    text-align: center;
+}
+
+.copy-button {
+    width: 90px;
+    height: 24px;
+    margin-left: 10px;
+}
