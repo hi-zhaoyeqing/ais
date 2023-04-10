@@ -20,11 +20,18 @@ a {
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body,html,#root {
   width: 100%;
   height: 100%;
   overflow: hidden;
+  background-image: linear-gradient(45deg, #FFDEE9 0%, #B5FFFC 100%);
 }
 
+#iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}

@@ -1,26 +1,26 @@
 #aiTools {
-    height: calc(100% - 60px);
+    height: 100%;
     overflow: auto;
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
   }
   #aiTools .container {
     width: 100%;
     padding: 0 24px;
-    box-sizing: border-box;
+    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   #aiTools .card {
-    width: 240px;
+    width: 270px;
     margin: 12px 0;
     position: relative;
   }
 
   #aiTools h3 {
-    margin-top: 20px;
+    margin-top: 60px;
   }
   .dot-wrap {
     position: absolute;

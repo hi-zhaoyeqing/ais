@@ -1,9 +1,8 @@
 import Loading from "../../componments/Loading";
 import Masonry from "react-masonry-css";
-import { waterfallList } from "../../img.js";
+import { aiImgs } from "../../json/aiImg.js";
 import "./index.css";
 import { useEffect, useState } from "react";
-import InfiniteScroll from "react-infinite-scroll-component";
 
 const breakpointColumnsObj = {
   default: 4,
@@ -28,8 +27,8 @@ function AiImg() {
   };
 
   useEffect(() => {
-    setLocalData(shuffle(Array.from(new Set(waterfallList))));
-    setData(shuffle(Array.from(new Set(waterfallList))).slice(0, 10));
+    setLocalData(shuffle(Array.from(new Set(aiImgs))));
+    setData(shuffle(Array.from(new Set(aiImgs))).slice(0, 10));
   }, []);
 
 

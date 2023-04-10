@@ -1,4 +1,4 @@
-import { chatGptTips } from "../../aiOthers";
+import { chatGptTips } from "../../json/chatGptTips";
 import Loading from "../../componments/Loading";
 import "../../assets/css/card.css";
 import "./index.css";

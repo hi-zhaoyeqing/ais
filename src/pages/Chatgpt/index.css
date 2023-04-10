@@ -1,8 +1,8 @@
 
-#chatGpt {
-    height: calc(100% - 60px);
+#threeChat {
+    height: 100%;
     overflow: auto;
-    width: 90%;
+    width: 1200px;
     margin: 0 auto;
 }
 .iframe-wrap {
@@ -11,7 +11,7 @@
 }
 
 #chatGpt .header {
-    width: 90%;
+    width: 1200px;
     position: fixed;
     bottom: 24px;
     display: flex;
@@ -45,3 +45,59 @@
        transform:rotate(360deg);
     }
  }
+
+
+ .aq-container {
+    width: 60%;
+    margin: 0 auto;
+    padding:24px;
+    
+    height: calc(100% - 90px);
+    overflow: auto;
+}
+.aq-container ul li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.aq-container ul li .ans {
+    display: flex;
+    width: 100%;
+    line-height: 30px;
+    align-items: center;
+}
+
+.aq-container ul li .qu {
+    width: 100%;
+    line-height: 30px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 24px 0 rgba(85,103,132,.1);
+    margin: 20px 0;
+    padding: 24px 20px 20px;
+    width: 100%;
+}
+
+.aq-container ul li .qu .qu-1 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.aq-container ul li .qu .qu-2 {
+    width: 100%;
+    padding: 4px 50px;
+    
+}
+.aq-container ul li .ans img {
+    margin-left: 13px;
+}
+
+.aq-container ul li .qu .qu-1 img {
+    margin: 0 10px 0 0;
+}
+
+.aq-container ul li .qu:nth-child(even){
+    color: #8c8c8c;
+}
+

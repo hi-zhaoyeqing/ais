@@ -1,12 +1,12 @@
 .card {
-  width: 200px;
-  margin: 12px;
-  padding: 24px 24px;
-  border-radius: 40px;
-  box-shadow: -6px -6px 20px rgba(255, 255, 255, 1),
-    6px 6px 20px rgba(0, 0, 0, 0.3);
-  cursor: pointer;
-  transition: all 0.3s;
+  width: 225px;
+    margin: 12px;
+    padding: 24px 24px;
+    box-shadow: -2px -2px 20px rgba(255, 255, 255, 1), 6px 6px 20px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 35px;
+    background-color: rgba(255,255,255,0.5);
 }
 
 .container .card:nth-child(4n) {
@@ -76,7 +76,7 @@
 .container .card .contentBx .tag span {
   border: 1px solid #000;
   padding: 2px 5px;
-  box-sizing: border-box;
+  
   margin-right: 4px;
   margin-bottom: 4px;
   border-radius: 8px;

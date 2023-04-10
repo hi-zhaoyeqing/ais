@@ -8,7 +8,7 @@
 #urlHandler .container {
     height: calc(100% - 80px);
     padding-top: 24px;
-    box-sizing: border-box;
+    
 }
 
 #urlHandler h2 {
