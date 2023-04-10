@@ -1,9 +1,585 @@
 export const aiWebsits = [
   {
+      "title": "ContentDetector.AI",
+      "subTitle": "Ensure Authenticity of Your Work with ContentDetector AI",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/147f242dea915158e30301280b47196ab0c74ef9-2325x1187.jpg?rect=26,0,2274,1187&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://contentdetector.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#general writing",
+      "cnSubTitle": "使用 ContentDetector AI 确保您工作的真实性"
+  },
+  {
+      "title": "Epagestore.ai",
+      "subTitle": "Effortlessly Create Content with Epagestore.ai's Free AI-Powered Platform",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/7c0023e1cb9df0736229de8350ecaa6fb098b5d2-2275x1202.jpg?rect=0,8,2275,1187&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://epagestore.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#copywriting",
+      "cnSubTitle": "使用 Epagestore.ai 的免费人工智能平台轻松创建内容"
+  },
+  {
+      "title": "AI tutor by UUKI",
+      "subTitle": "Revolutionise Python Learning with Personalised AI Tutor",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/397cd8dccdd4a676604a812a5e49d9aaa1dab876-2045x1242.jpg?rect=0,88,2045,1067&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://community.uuki.live/course/tdb3Vsl1/python-course/aitutor?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#education assistant",
+      "cnSubTitle": "使用个性化 AI 导师彻底改变 Python 学习"
+  },
+  {
+      "title": "Prompthub",
+      "subTitle": "Discover the Best ChatGPT Prompts in One Place",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/782657d9363a2c296f79df9e91d2107708d0f94e-2448x1232.jpg?rect=44,0,2361,1232&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://prompthub.nl/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#prompts",
+      "cnSubTitle": "一站式发现最佳 ChatGPT 提示"
+  },
+  {
+      "title": "Prompt Apps",
+      "subTitle": "Ready-to-use generative AI apps from prompt",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/fbcf714ac9df1b488d4bdb77f6550cdb04f75139-2530x1167.jpg?rect=147,0,2236,1167&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://chatgpt-prompt-apps.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#prompts",
+      "cnSubTitle": "即用型生成式 AI 应用程序"
+  },
+  {
+      "title": "Alphy",
+      "subTitle": "Ask Questions on YouTube and Twitter Spaces with Ease",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/cd840bd8a975202fc8e9d0c3becb4fe6a585fd03-2474x1224.jpg?rect=65,0,2345,1224&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://alphy.app/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#summarizer",
+      "cnSubTitle": "在 YouTube 和 Twitter Spaces 上轻松提问"
+  },
+  {
+      "title": "TheDIYtrip",
+      "subTitle": "Explore the World with Ease: Plan Your Trips in Seconds with theDIYtrip",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/59db275191f12c7ef5f477b651a8c3739eb2422c-2055x1245.jpg?rect=0,87,2055,1072&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.thediytrip.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#travel",
+      "cnSubTitle": "轻松探索世界：使用 theDIYtrip 在几秒钟内计划您的旅行"
+  },
+  {
+      "title": "MemeCam",
+      "subTitle": "Get Creative with MemeCam's Real-Time Meme Generation from Your Webcam",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/7d31837de208ed798536cca498d4f74b98a643db-2560x1257.jpg?rect=76,0,2409,1257&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.memecam.dk/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#fun tools",
+      "cnSubTitle": "使用 MemeCam 从您的网络摄像头实时生成表情包，发挥创意"
+  },
+  {
+      "title": "UncensoredGreats",
+      "subTitle": "Talk to Esteemed Authors about their Collected Works",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/7514e724e3685dc22bc1174f1a1b9e313e71c211-2555x1139.jpg?rect=187,0,2183,1139&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://uncensoredgreats.streamlit.app/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#fun tools#research",
+      "cnSubTitle": "与受人尊敬的作家谈论他们的作品集"
+  },
+  {
+      "title": "VirtualStagingAI",
+      "subTitle": "Virtually stage in one click",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/922858316f4a2c0516f876ef31722fa6302d5614-1920x869.png?rect=128,0,1665,869&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.virtualstagingai.app/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#real estate",
+      "cnSubTitle": "一键虚拟舞台"
+  },
+  {
+      "title": "Babble AI",
+      "subTitle": "Efficiently Deploy Chatbots on Your Website with Babble AI",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/b9d7ea44d6a621e2a37f019685c0333105d56cd0-2300x1233.jpg?rect=0,17,2300,1200&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://babble-ai.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#startup tools",
+      "cnSubTitle": "使用 Babble AI 在您的网站上高效部署聊天机器人"
+  },
+  {
+      "title": "Arible AI Avatars",
+      "subTitle": "Photography Experience with Innovative Camera-Less Technology",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/01fe082f3239c6c0c568a2154a3ff02feedbab19-2408x1158.jpg?rect=95,0,2219,1158&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://arible.co/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#avatars#image generator",
+      "cnSubTitle": "创新无相机技术的摄影体验"
+  },
+  {
+      "title": "Draw3D",
+      "subTitle": "Convert Your Sketch into a Photorealistic Image with Ease",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/89cc6e625dbed109678fe8bc942f1506bcc0641e-2346x984.jpg?rect=230,0,1886,984&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://draw3d.online/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#3D#design assistant",
+      "cnSubTitle": "轻松将您的草图转换为逼真的图像"
+  },
+  {
+      "title": "Digital Bible",
+      "subTitle": "the most advanced Bible experience in the world",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/b344bb39f91561cdbafe4bd9cb4ec90031a43c06-1918x896.png?rect=101,0,1717,896&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.digitalbible.ca/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#religion",
+      "cnSubTitle": "世界上最先进的读经体验"
+  },
+  {
+      "title": "IB monograph Assistant",
+      "subTitle": "Effortlessly Write Long Essays with AI-Powered Tools",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/6aab358923098b5abcc2eb7bed4b433b5768990e-2330x1226.jpg?rect=0,5,2330,1216&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://ibmonograph.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#general writing",
+      "cnSubTitle": "使用 AI 驱动的工具轻松撰写长篇论文"
+  },
+  {
+      "title": "Dataset Marketplace",
+      "subTitle": "Get Accurate and Complete Datasets Ready-to-Use",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/a7cc03260003bedf35601030b68e63ad2f65812e-2320x1240.jpg?rect=0,15,2320,1211&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://brightdata.com/products/datasets?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#resources",
+      "cnSubTitle": "获取准确且完整的数据集以供使用"
+  },
+  {
+      "title": "TeacherMatic",
+      "subTitle": "AI Tools for Teachers: Simplify Your Workload",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/dbd044da9b955d4ae8abd827e092ed01edc1aedb-2393x1240.jpg?rect=9,0,2376,1240&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://teachermatic.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#education assistant#productivity",
+      "cnSubTitle": "面向教师的 AI 工具：简化您的工作量"
+  },
+  {
+      "title": "ArcaneLand",
+      "subTitle": "Experience the Smartest AI Dungeon Master Yet",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/b73fc4d9734ca0c2173d7893c85c10d74683bf30-2036x1240.jpg?rect=0,89,2036,1063&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://arcane.land/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#gaming",
+      "cnSubTitle": "体验迄今为止最聪明的 AI 地牢大师"
+  },
+  {
+      "title": "Eclipse AI",
+      "subTitle": "Generative AI to predict & prevent customer churn",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/dfc1e01b6e41a3cc86bdb82fd00dad26367676f7-1920x896.png?rect=102,0,1717,896&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://eclipse-ai.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#productivity",
+      "cnSubTitle": "用于预测和防止客户流失的生成式 AI"
+  },
+  {
+      "title": "Pod Genie",
+      "subTitle": "Turn any RSS feed into your own podcast",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/e094eb2a7dd670a16629893be7b003e716c0c5ab-1908x874.png?rect=117,0,1675,874&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://pod-genie.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#text to speech#paraphraser#fun tools",
+      "cnSubTitle": "将任何 RSS 提要变成您自己的播客"
+  },
+  {
+      "title": "Studyable",
+      "subTitle": "Study with an AI tutor",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/085cf6a3310ba8c8d2e0d8f5796b1cc068e6e0bd-1920x877.png?rect=120,0,1680,877&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://studyable.app/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#education assistant",
+      "cnSubTitle": "与人工智能导师一起学习"
+  },
+  {
+      "title": "WriteMeAI",
+      "subTitle": "A brilliant and faster way to write",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/fbc2bca10659745ed01692e30be6b45f8ab9d2ff-1920x904.png?rect=94,0,1732,904&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://writeme.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#copywriting#general writing#email assistant",
+      "cnSubTitle": "一种出色而快速的写作方式"
+  },
+  {
+      "title": "Haiku Lens",
+      "subTitle": "Transform Your Photos into Poems with Haiku Lens",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/c4fb216c53cf882fe9a4a1fa57c1f1c2ac0abca3-2392x1200.jpg?rect=47,0,2299,1200&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://haikulens.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#fun tools",
+      "cnSubTitle": "使用 Haiku Lens 将您的照片变成诗歌"
+  },
+  {
+      "title": "Yobi",
+      "subTitle": "Optimise Your Communication with Yobi's Central Platform",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/ebc12f2bd46021b6a41afdb6ded1ea6e69929a5e-2546x1151.jpg?rect=170,0,2206,1151&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://yobi.app/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#customer support#email assistant",
+      "cnSubTitle": "优化您与 Yobi 中央平台的沟通"
+  },
+  {
+      "title": "Dubdub.ai",
+      "subTitle": "Effortlessly Dub Your Content with Dubdub.ai's AI-Powered Tool",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/94bb02883139bce0debff494aaff213b720aae93-2119x1240.jpg?rect=0,67,2119,1106&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.dubdub.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "tag": "#transcriber",
+      "cnSubTitle": "使用 Dubdub.ai 的 AI 驱动工具轻松复制您的内容"
+  },
+  {
+      "title": "UiMagic",
+      "subTitle": "The Journey from Text to Web Design: Crafting the Perfect Digital Platform",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/cbe8ec60f67d9a78887df6335b84bfa89d70a3c9-2254x1187.jpg?rect=0,6,2254,1176&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.uimagic.io/",
+      "tag": "#low-code/no-code",
+      "cnSubTitle": "从文本到网页设计的旅程：打造完美的数字平台"
+  },
+  {
+      "title": "CourseAI",
+      "subTitle": "The next-gen online course creation tool",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/4822cd477330c0b399429833729d57fded557a2f-1904x877.png?rect=112,0,1680,877&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://courseai.co/",
+      "tag": "#education assistant",
+      "cnSubTitle": "下一代在线课程创建工具"
+  },
+  {
+      "title": "Tandem GPT",
+      "subTitle": "Language practise with cutting-edge AI today!",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/46961b88c7212feff940bc396b28c9a97bccec00-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.tandem-gpt.com/",
+      "tag": "#education assistant",
+      "cnSubTitle": "今天使用尖端人工智能进行语言练习！"
+  },
+  {
+      "title": "YourDoctor AI",
+      "subTitle": "The AI helper to provide you with health recommendations.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/4bf725f2902f96a9478f8934900336abcc590da0-2081x1119.jpg?rect=0,17,2081,1086&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://doctor.yourmed.app/",
+      "tag": "#healthcare",
+      "cnSubTitle": "AI帮手为您提供健康建议。"
+  },
+  {
+      "title": "Ai|coustics",
+      "subTitle": "Transform Your Audio Content: Elevate Speech Quality to Studio-Level with Ease",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/3a87e10aeebb5d9a84769ea00f062c9fe0639455-2049x1204.jpg?rect=0,68,2049,1069&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://ai-coustics.com/playground",
+      "tag": "#audio editing",
+      "cnSubTitle": "转换您的音频内容：轻松将语音质量提升至录音室级别"
+  },
+  {
+      "title": "LoopGPT",
+      "subTitle": "Create an AI vs. AI Conversation Loop",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/f057a9fed24816aaa26e7611db6197a9f0f74084-1913x844.png?rect=149,0,1617,844&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://mighil.com/loopgpt/",
+      "tag": "#experiments",
+      "cnSubTitle": "创建 AI 与 AI 对话循环"
+  },
+  {
+      "title": "Chatprep AI",
+      "subTitle": "Chatprep: Your Personal Exam Coach - The App that Guides You to Success",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/7af2abb6e33c7e76c3e6964bc0dee1fe5d6c6e39-2518x1261.jpg?rect=51,0,2416,1261&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://chatprep.net/",
+      "tag": "#education assistant",
+      "cnSubTitle": "Chatprep：您的个人考试教练 - 引导您成功的应用程序"
+  },
+  {
+      "title": "ChatSite By Databerry",
+      "subTitle": "Connect your data to ChatGPT in seconds. There is no need for coding!",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/075d6bc8291c7a924ec71b45a335ab3e7feb83a6-2148x1183.jpg?rect=0,32,2148,1121&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.databerry.ai/",
+      "tag": "#low-code/no-code",
+      "cnSubTitle": "在几秒钟内将您的数据连接到 ChatGPT。无需编码！"
+  },
+  {
+      "title": "Midjourney Prompt Generator",
+      "subTitle": "streamline the prompting process with hundreds of helpful presets",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/8c53bf4a0b5661046f53a90174b80fbc70a36aa9-1384x680.png?rect=41,0,1303,680&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://lasereyebunny.gumroad.com/l/midjourney_prompt_generator",
+      "tag": "#prompts#productivity",
+      "cnSubTitle": "使用数百个有用的预设简化提示过程"
+  },
+  {
+      "title": "Zeg AI",
+      "subTitle": "Get photos/ videos of your Product without sending the product to a studio",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/42aa52e3ff3e4f0ae235a7e0dcc2235de3a9b036-1900x883.png?rect=104,0,1692,883&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.zeg.ai/",
+      "tag": "#video generator#image generator",
+      "cnSubTitle": "无需将产品发送到工作室即可获取产品的照片/视频"
+  },
+  {
+      "title": "Boring Report",
+      "subTitle": "An app that eliminates sensationalism from the news",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/d36749994268831777916ef53bd1bc8afcfc1af8-2511x1253.jpg?rect=56,0,2401,1253&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.boringreport.org/",
+      "tag": "#summarizer",
+      "cnSubTitle": "消除新闻中耸人听闻的应用程序"
+  },
+  {
+      "title": "Atlancer AI",
+      "subTitle": "With a simple text prompt, you can create your own AI tools!",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/51d84ff01cd4721c7d9f79679e417eb114174074-2436x1266.jpg?rect=5,0,2426,1266&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://atlancer.ai/",
+      "tag": "#copywriting#image generator#life assistant",
+      "cnSubTitle": "通过简单的文字提示，您可以创建自己的 AI 工具！"
+  },
+  {
+      "title": "Zappr AI",
+      "subTitle": "AI chatbot for intelligent document analysis and search.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/df3f6f488e892e60d3909fe5c9d891b44ee5976e-2387x1150.jpg?rect=92,0,2204,1150&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://zappr.ai/",
+      "tag": "#developer tools",
+      "cnSubTitle": "用于智能文档分析和搜索的 AI 聊天机器人。"
+  },
+  {
+      "title": "PlaylistGenius AI",
+      "subTitle": "Create your next playlist with the help of PlaylistGenius",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/c7b0cfd511e00c482b87aa3c2659d05678f7aa37-2333x1216.jpg?rect=2,0,2330,1216&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.playlistgeniusai.com/",
+      "tag": "#music",
+      "cnSubTitle": "在 PlaylistGenius 的帮助下创建您的下一个播放列表"
+  },
+  {
+      "title": "Playlistable",
+      "subTitle": "The Perfect AI Playlist Generator",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/469cadd85225f70f6c51809ead21426c5915ac97-1920x903.png?rect=95,0,1730,903&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://playlistable.io/",
+      "tag": "#music#fun tools",
+      "cnSubTitle": "完美的 AI 播放列表生成器"
+  },
+  {
+      "title": "Kombine.ai",
+      "subTitle": "Create customized workflows from various AI components",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/d2ba68ce56c0b5b8ef0ff005059dfbff0f710669-1920x904.png?rect=94,0,1732,904&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://kombine.ai/",
+      "tag": "#prompts",
+      "cnSubTitle": "从各种 AI 组件创建自定义工作流"
+  },
+  {
+      "title": "Arsturn AI",
+      "subTitle": "Create a ChatBot for Your Website in 1 Minute.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/0fd12bfedadbcf9e3241a541056010372afeb879-2441x1224.jpg?rect=49,0,2345,1224&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://tryarsturn.com/",
+      "tag": "#startup tools",
+      "cnSubTitle": "在 1 分钟内为您的网站创建聊天机器人。"
+  },
+  {
+      "title": "InsightBase",
+      "subTitle": "Interact with your Database and Create Analytics",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/e85cde52fbbfa52b47cd6b42410eb4c18a73ce32-2483x1246.jpg?rect=48,0,2388,1246&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://insightbase.ai/",
+      "tag": "#developer tools",
+      "cnSubTitle": "与您的数据库交互并创建分析"
+  },
+  {
+      "title": "SalesMind AI",
+      "subTitle": "Personalized marketing strategies for each of your Clientele",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/946a609ec95e3148ff2261ad830714298f330c18-2284x1140.jpg?rect=50,0,2184,1140&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://sales-mind.ai/",
+      "tag": "#sales#human resources",
+      "cnSubTitle": "为您的每一位客户制定个性化的营销策略"
+  },
+  {
+      "title": "Brandwise AI",
+      "subTitle": "Hide brand-damaging remarks on social media automatically.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/dbc1990e199e084c393d900bb6e859ce4376a1e6-2405x1234.jpg?rect=21,0,2365,1234&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://brandwise.ai/",
+      "tag": "#social media assistant",
+      "cnSubTitle": "自动隐藏社交媒体上损害品牌的言论。"
+  },
+  {
+      "title": "Atmo AI",
+      "subTitle": "High-accuracy weather prediction for any city, state, or country.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/d7d05376e724e771d5fdd3314cd779893a504f9d-1920x881.png?rect=116,0,1688,881&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.atmo.ai/",
+      "tag": "#life assistant",
+      "cnSubTitle": "任何城市、州或国家的高精度天气预报。"
+  },
+  {
+      "title": "Copilot4Dating",
+      "subTitle": "AI-powered Dating assistant",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/68b60ced502701abea88e3ba533419bb4ba2859c-2401x1236.jpg?rect=17,0,2368,1236&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://copilot4dating.com/",
+      "tag": "#life assistant",
+      "cnSubTitle": "人工智能约会助手"
+  },
+  {
+      "title": "Maker ai",
+      "subTitle": "Improve Business Productivity with Maker.ai",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/61ca0a791c352d45d2a1206ca7bb7c16313e7245-1919x897.png?rect=101,0,1719,897&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://app.maker.ai/",
+      "tag": "#copywriting#design assistant",
+      "cnSubTitle": "使用 Maker.ai 提高企业生产力"
+  },
+  {
+      "title": "Tryitonai",
+      "subTitle": "Create Professional Studio Quality Headshots with AI",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/0cfebebc9e314bb7063be7b89fc63e5011eb4def-1920x900.png?rect=98,0,1725,900&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.tryitonai.com/",
+      "tag": "#avatars",
+      "cnSubTitle": "使用 AI 创建专业工作室品质的头像"
+  },
+  {
+      "title": "GPTExcel",
+      "subTitle": "Effortlessly create and understand formulas in Excel and Google Sheets!",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/d095d87585393866cecdb26917df91a20cf5b5bd-2395x1260.jpg?rect=0,5,2395,1250&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://gptexcel.uk/",
+      "tag": "#spreadsheets",
+      "cnSubTitle": "毫不费力地在 Excel 和 Google 表格中创建和理解公式！"
+  },
+  {
+      "title": "CopyFish",
+      "subTitle": "Copy, paste and translate text from any image, video or PDF.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/36516f8f96d58381cb1a742f09c117bb3fdb0a64-1840x898.png?rect=60,0,1721,898&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://ocr.space/copyfish",
+      "tag": "#transcriber",
+      "cnSubTitle": "从任何图像、视频或 PDF 中复制、粘贴和翻译文本。"
+  },
+  {
+      "title": "Promptmetheus",
+      "subTitle": "ChatGPT prompt engineering toolkit",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/1718a56057f2ff8b766f517239569caf12c88e19-2390x1230.jpg?rect=17,0,2357,1230&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "http://promptmetheus.com/",
+      "tag": "#prompts",
+      "cnSubTitle": "ChatGPT 提示工程工具包"
+  },
+  {
+      "title": "TextLayer",
+      "subTitle": "Use AI to discover and understand Research papers",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/dbaba1b992172f3a9cf3e317f14a66c818ba6a97-2507x1231.jpg?rect=75,0,2359,1231&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://textlayer.ai/",
+      "tag": "#research#summarizer",
+      "cnSubTitle": "使用 AI 发现和理解研究论文"
+  },
+  {
+      "title": "Amazing AI",
+      "subTitle": "Generate images from text using Stable Diffusion locally on your Mac",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/0e71afb9f31671130ac514b9c7d2dd69add5f973-2292x1259.jpg?rect=0,32,2292,1196&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://sindresorhus.com/amazing-ai",
+      "tag": "#image generator",
+      "cnSubTitle": "在 Mac 上本地使用 Stable Diffusion 从文本生成图像"
+  },
+  {
+      "title": "MachineTranslation",
+      "subTitle": "Machine translation aggregator and analysis based on GPT",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/28691f9db8d9aeb8569b4bfe364f5ed2fe12875d-1920x882.png?rect=115,0,1690,882&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.machinetranslation.com/",
+      "tag": "#general writing#transcriber",
+      "cnSubTitle": "基于GPT的机器翻译聚合器和分析"
+  },
+  {
+      "title": "Insyte AI",
+      "subTitle": "AI-Powered Landing Pages Created in Seconds",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/18687c04dd3e97755e75cd4170a880849e17ff11-2197x1252.jpg?rect=0,53,2197,1147&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.insyte.tech/",
+      "tag": "#low-code/no-code",
+      "cnSubTitle": "在几秒钟内创建 AI 驱动的登陆页面"
+  },
+  {
+      "title": "Intellibase",
+      "subTitle": "Prioritize customer needs with AI-driven feedback analysis",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/7ae38cab0eb7653ab8665ee6257d79afdd845fb6-2268x1246.jpg?rect=0,31,2268,1184&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://intellibase.io/",
+      "tag": "#startup tools#productivity",
+      "cnSubTitle": "通过 AI 驱动的反馈分析优先考虑客户需求"
+  },
+  {
+      "title": "GiftHuntr",
+      "subTitle": "GIft Giver powered by AI",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/3f84d35d7e5d4fc1fdcfc6d5e944e05f9a16b962-1920x887.png?rect=110,0,1700,887&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://gifthuntr.com/",
+      "tag": "#gift ideas",
+      "cnSubTitle": "由 AI 驱动的送礼者"
+  },
+  {
+      "title": "Prisma Editor",
+      "subTitle": "A powerful tool to visualize and edit Prisma Schema.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/b31f8640f6943345380e568fd9ff24cd368991b5-1920x916.png?rect=83,0,1755,916&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://prisma-editor.up.railway.app/",
+      "tag": "#SQL",
+      "cnSubTitle": "可视化和编辑 Prisma Schema 的强大工具。"
+  },
+  {
+      "title": "Aiko",
+      "subTitle": "AI-powered high-quality on-device transcription on your Apple Devices.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/5b2ef2b2fdc5f3d29c0d03e118c08179ce2da02f-2383x1205.jpg?rect=38,0,2309,1205&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://sindresorhus.com/aiko",
+      "tag": "#transcriber",
+      "cnSubTitle": "在您的 Apple 设备上进行 AI 支持的高质量设备上转录。"
+  },
+  {
+      "title": "LIFTZ AI",
+      "subTitle": "Get Fit Smarter, Not Harder with Our iOS App and AI Technology",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/719fc4d459b7496a705712ebf9439e30c82ccd6e-2442x1252.jpg?rect=22,0,2399,1252&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://liftz.ai/",
+      "tag": "#life assistant",
+      "cnSubTitle": "借助我们的 iOS 应用程序和 AI 技术，更智能地健身"
+  },
+  {
+      "title": "Junia.AI",
+      "subTitle": "Get Expert SEO Answers from Junia - Ask Anything!",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/253e24df2725989b8612551d9ec87fa084c07a15-2400x1250.jpg?rect=3,0,2395,1250&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://junia.ai/",
+      "tag": "#SEO",
+      "cnSubTitle": "从 Junia 获得专家 SEO 解答 - 问任何问题！"
+  },
+  {
+      "title": "Workist",
+      "subTitle": "AI-powered document processing automation",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/6e31e1bbe83cb43d5e7d0e5a345a85e3538e7efe-1920x901.png?rect=97,0,1726,901&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://workist.com/",
+      "tag": "#low-code/no-code#finance",
+      "cnSubTitle": "人工智能驱动的文档处理自动化"
+  },
+  {
+      "title": "SiteGPT",
+      "subTitle": "Answer your visitors' inquiries instantly with a personalised chatbot.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/d5a32d567702089e4d7efed9db0c842ffc78dae8-1959x1255.jpg?rect=0,117,1959,1022&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://sitegpt.ai/",
+      "tag": "#startup tools",
+      "cnSubTitle": "使用个性化的聊天机器人即时回答访客的询问。"
+  },
+  {
+      "title": "FitWizard",
+      "subTitle": "AI based Personalized Fitness & Nutrition Genie!",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/4c85676ecd43dd2b38d65f5b847b18a13b23169e-2216x1224.jpg?rect=0,34,2216,1156&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.gymgenie.ai/",
+      "tag": "#life assistant",
+      "cnSubTitle": "基于人工智能的个性化健身和营养精灵！"
+  },
+  {
+      "title": "Wisebot",
+      "subTitle": "Build an AI Chatbot on your content base & predictably drive more engagement. 100% done-for-you.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/522509bd03b1f93969d1468a456aa32ed3413f42-2489x1256.jpg?rect=42,0,2407,1256&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.wisebot.app/",
+      "tag": "#startup tools",
+      "cnSubTitle": "在您的内容库上构建 AI 聊天机器人，并可预见地推动更多参与。100% 为您完成。"
+  },
+  {
+      "title": "GistReader",
+      "subTitle": "Personalised Podcasts & Summaries with AI-Enabled RSS Reader",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/a6dd3717016a15d3005230a80a7ee79c6cc63321-2196x1212.jpg?rect=0,33,2196,1146&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://gistreader.com/",
+      "tag": "#summarizer",
+      "cnSubTitle": "使用支持 AI 的 RSS 阅读器的个性化播客和摘要"
+  },
+  {
+      "title": "Holara. AI",
+      "subTitle": "Holara's AI-powered platform makes anime art creation effortless.",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/a1d8c900de9c1a46dd1515797231408fd740c1bc-2476x1252.jpg?rect=39,0,2399,1252&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://holara.ai/",
+      "tag": "#image generator#avatars",
+      "cnSubTitle": "Holara 的人工智能平台让动漫艺术创作变得轻松。"
+  },
+  {
+      "title": "Commander GPT",
+      "subTitle": "Streamline Your GPT Usage on Desktop - Quick and Effortlessly",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/008dd8049048a90b443c4be7484083934fc9aba2-2404x1234.jpg?rect=20,0,2365,1234&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://www.commandergpt.app/",
+      "tag": "#productivity",
+      "cnSubTitle": "简化桌面上的 GPT 使用 - 快速而轻松"
+  },
+  {
+      "title": "Monterey AI",
+      "subTitle": "Copilot for Everyday Product Insights",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/87834aa23b500ba09a907ca28778645374f6fc39-2507x1240.jpg?rect=66,0,2376,1240&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://monterey.ai/",
+      "tag": "#startup tools",
+      "cnSubTitle": "日常产品洞察的副驾驶"
+  },
+  {
+      "title": "Tinder Glowup",
+      "subTitle": "Generates images that show what you would look like with abs",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/a6ca241d112154b522d36e3577f4aa4e92667ec2-1920x916.png?rect=83,0,1755,916&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://tinderglowup.com/",
+      "tag": "#image generator#fun tools",
+      "cnSubTitle": "生成显示您使用 abs 后的样子的图像"
+  },
+  {
+      "title": "Instantgen AI",
+      "subTitle": "Leverage AI tools to create incredible content 10X faster",
+      "img": "https://cdn.sanity.io/images/u0v1th4q/production/a1f5d60244a537444899c233355f2df479ccc4f9-2466x1169.jpg?rect=113,0,2240,1169&w=640&h=334&auto=format&w=3840&q=75",
+      "link": "https://instantgen.ai/",
+      "tag": "#social media assistant",
+      "cnSubTitle": "利用 AI 工具以 10 倍的速度创建令人难以置信的内容"
+  },
+  {
       "title": "Toolbuilder",
       "subTitle": "No code AI tool building platform",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/057bb94d384bc3e63ce675923e9424fc599a94d9-1920x897.png?rect=101,0,1719,897&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://toolbuilder.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://toolbuilder.ai/",
       "tag": "#general writing#fun tools#productivity",
       "cnSubTitle": "无代码AI工具搭建平台"
   },
@@ -11,7 +587,7 @@ export const aiWebsits = [
       "title": "60sec.site",
       "subTitle": "Create A Custom Landing Page For Your App in 60 seconds",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/96efc3f0256f73bf3ab9ac815ddaaa9b2c95fe5c-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://60sec.site/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://60sec.site/",
       "tag": "#low-code/no-code",
       "cnSubTitle": "在 60 秒内为您的应用创建自定义登陆页面"
   },
@@ -19,7 +595,7 @@ export const aiWebsits = [
       "title": "NovelFlow AI",
       "subTitle": "Uses AI to automatically generate the first draft of your novel.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/dc02a64cb2a1a94cde1fff18919ab98960dbcb7b-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://novelflow.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://novelflow.ai/",
       "tag": "#general writing#story teller#copywriting",
       "cnSubTitle": "使用 AI 自动生成您的小说初稿。"
   },
@@ -27,7 +603,7 @@ export const aiWebsits = [
       "title": "ChatHub",
       "subTitle": "All-in-one chatbot client",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/3f85cc237bfa8b0da31bfe2d9c7b42915bd3b14f-1920x903.png?rect=95,0,1730,903&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://chathub.gg/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://chathub.gg/",
       "tag": "#productivity#prompts",
       "cnSubTitle": "多合一聊天机器人客户端"
   },
@@ -35,7 +611,7 @@ export const aiWebsits = [
       "title": "Heybot",
       "subTitle": "Website to chatbot converter powered by ChatGPT",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/e617917e34cac5b315d96515adbf664b04a5140f-1374x675.png?rect=54,0,1267,661&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://heybot.thesamur.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://heybot.thesamur.ai/",
       "tag": "#productivity",
       "cnSubTitle": "网站到由 ChatGPT 提供支持的聊天机器人转换器"
   },
@@ -43,7 +619,7 @@ export const aiWebsits = [
       "title": "ProbeAI",
       "subTitle": "AI co-pilot for data analysts",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/0bcf917a98fa37fccb194cb1f26b36338f350e0b-1795x812.jpg?rect=120,0,1556,812&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.probeai.app/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.probeai.app/",
       "tag": "#SQL#developer tools",
       "cnSubTitle": "数据分析师的 AI 副驾驶"
   },
@@ -51,7 +627,7 @@ export const aiWebsits = [
       "title": "Vicuna-13B",
       "subTitle": "Chat with Open Large Language Models",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/4ce92cb18400c05fa441e5c384087fe9df14092b-1915x899.png?rect=97,0,1723,899&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://chat.lmsys.org/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://chat.lmsys.org/",
       "tag": "#research#fun tools",
       "cnSubTitle": "与开放式大型语言模型聊天"
   },
@@ -59,7 +635,7 @@ export const aiWebsits = [
       "title": "Sage AI",
       "subTitle": "AI Assistant for Personal Health",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/9918f8e924c7b9f6445e07dcc8ba186e072a9053-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://labworks.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://labworks.ai/",
       "tag": "#healthcare",
       "cnSubTitle": "个人健康AI助手"
   },
@@ -67,7 +643,7 @@ export const aiWebsits = [
       "title": "Naav",
       "subTitle": "Manage your projects easily, with the help of AI.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/c3405a3b42241459e9f23828d96600e6041edce5-1920x894.png?rect=104,0,1713,894&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://naav.ro/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://naav.ro/",
       "tag": "#productivity#startup tools",
       "cnSubTitle": "在 AI 的帮助下轻松管理您的项目。"
   },
@@ -75,7 +651,7 @@ export const aiWebsits = [
       "title": "Perpend",
       "subTitle": "A new UI wrapper to level up your GPT game",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/b01feef564bc8547a56ae87ec3b32c65164bb66b-1920x896.png?rect=102,0,1717,896&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://perpend.in/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://perpend.in/",
       "tag": "#prompts",
       "cnSubTitle": "一个新的 UI 包装器来升级你的 GPT 游戏"
   },
@@ -83,7 +659,7 @@ export const aiWebsits = [
       "title": "Reetail",
       "subTitle": "AI-powered e-commerce store creator",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/69994482d2f8a0afff95be66c5ebe736a93e0441-1919x905.png?rect=93,0,1734,905&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://reetail.store/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://reetail.store/",
       "tag": "#e-commerce",
       "cnSubTitle": "人工智能驱动的电子商务商店创建者"
   },
@@ -91,7 +667,7 @@ export const aiWebsits = [
       "title": "Hotball",
       "subTitle": "AI business consulting tool",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/589ae59ff83b2e0283ac58851dac93e3b48de4f0-1914x897.png?rect=98,0,1719,897&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://hotball.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://hotball.ai/",
       "tag": "#startup tools",
       "cnSubTitle": "AI商业咨询工具"
   },
@@ -99,7 +675,7 @@ export const aiWebsits = [
       "title": "ReContent.AI",
       "subTitle": "Repurpose your content into social media posts",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/f278c2b6d452acdb5d04415495c94f64a5c15344-1920x865.png?rect=132,0,1657,865&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://recontent.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://recontent.ai/",
       "tag": "#social media assistant",
       "cnSubTitle": "将您的内容重新用于社交媒体帖子"
   },
@@ -107,7 +683,7 @@ export const aiWebsits = [
       "title": "Roketfy",
       "subTitle": "Skyrocket Your Etsy Sales using Roketfy",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/629760aa556c3cc1ec95583b3e40b683c00930f9-1920x896.png?rect=102,0,1717,896&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://roketfy.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://roketfy.com/",
       "tag": "#e-commerce#sales",
       "cnSubTitle": "使用 Roketfy 使您的 Etsy 销售额飙升"
   },
@@ -115,7 +691,7 @@ export const aiWebsits = [
       "title": "Korewa AI",
       "subTitle": "An AI chat platform designed for *cultured* weeaboos.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/de1aed6753123b5fd5f3e36ee08b64fad3098cfc-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://korewa.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://korewa.ai/",
       "tag": "#avatars#fun tools",
       "cnSubTitle": "专为*文化* weeaboos 设计的 AI 聊天平台。"
   },
@@ -123,7 +699,7 @@ export const aiWebsits = [
       "title": "WhatsGPT",
       "subTitle": "GPT over Whatsapp and Telegram with voice and image processing",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/ed5414363f25127ab0a600cf70d644366899e5f7-1920x905.png?rect=93,0,1734,905&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.whatsgpt.me/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.whatsgpt.me/",
       "tag": "#email assistant#life assistant",
       "cnSubTitle": "GPT over Whatsapp 和 Telegram 语音和图像处理"
   },
@@ -131,7 +707,7 @@ export const aiWebsits = [
       "title": "Storied",
       "subTitle": "Family history browser",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/69921e99a59ca4765ddc8a6479533b042d0eb9b8-1920x895.png?rect=103,0,1715,895&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://storied.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://storied.com/",
       "tag": "#story teller#fun tools",
       "cnSubTitle": "家谱浏览器"
   },
@@ -139,7 +715,7 @@ export const aiWebsits = [
       "title": "AgileGPT",
       "subTitle": "Transform your team dynamics to build high-performing teams.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/d70fedcf915c4f8afe782529f304e569dd620c97-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.agilegpt.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.agilegpt.com/",
       "tag": "#prompts#code assistant#developer tools",
       "cnSubTitle": "转变您的团队动力以建立高绩效团队。"
   },
@@ -147,7 +723,7 @@ export const aiWebsits = [
       "title": "Interview Prep AI",
       "subTitle": "Personal AI job interview coach",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/5bad09ebb2fead56620e0e2c632035560c148484-1916x903.png?rect=93,0,1730,903&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://interviewprep-ai.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://interviewprep-ai.com/",
       "tag": "#productivity#human resources",
       "cnSubTitle": "个人人工智能求职面试教练"
   },
@@ -155,7 +731,7 @@ export const aiWebsits = [
       "title": "Coachvox AI",
       "subTitle": "Coachvox AI enables influential entrepreneurs and coaches to clone themselves using artificial intelligence.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/63e97cb242e98f17c445bc877f82c72c8a4a82a4-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://coachvox.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://coachvox.ai/",
       "tag": "#customer support",
       "cnSubTitle": "Coachvox AI 使有影响力的企业家和教练能够使用人工智能克隆自己。"
   },
@@ -163,7 +739,7 @@ export const aiWebsits = [
       "title": "Smart Gift AI",
       "subTitle": "AI-powered gifting platform",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/005162a3715cecd8faa92b1c1e109e1d06637cb2-1916x902.png?rect=94,0,1728,902&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://smartgiftai.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://smartgiftai.com/",
       "tag": "#gift ideas",
       "cnSubTitle": "人工智能驱动的礼品平台"
   },
@@ -171,7 +747,7 @@ export const aiWebsits = [
       "title": "GeniePM",
       "subTitle": "Create sharp user stories, use cases, and more for your projects using mAIgic.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/df22d7fc32724f3a70d6b3e5b9f8160339029fdd-1920x906.png?rect=92,0,1736,906&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://genie.pm/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://genie.pm/",
       "tag": "#startup tools",
       "cnSubTitle": "使用 mAIgic 为您的项目创建清晰的用户故事、用例等。"
   },
@@ -179,7 +755,7 @@ export const aiWebsits = [
       "title": "InterviewAI",
       "subTitle": "AI-powered tools to interviewers to conduct great interviews",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/fd5042d9e7fb8dd8e13d694d7e562985b3269915-1918x898.png?rect=99,0,1721,898&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.interviewai.io/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.interviewai.io/",
       "tag": "#human resources",
       "cnSubTitle": "人工智能驱动的工具让面试官进行出色的面试"
   },
@@ -187,7 +763,7 @@ export const aiWebsits = [
       "title": "Window.ai",
       "subTitle": "Use your own AI models on the web.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/45a7010f7689af4812bcbe7e98dabadc9b132cc0-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://windowai.io/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://windowai.io/",
       "tag": "#productivity",
       "cnSubTitle": "在 Web 上使用您自己的 AI 模型。"
   },
@@ -195,7 +771,7 @@ export const aiWebsits = [
       "title": "Luna Ai",
       "subTitle": "Create better Linkedin content 10x Faster with Ai",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/59517d8034615b89b139084137371ed4b2c79ded-1920x894.png?rect=104,0,1713,894&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.lunaa.io/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.lunaa.io/",
       "tag": "#social media assistant",
       "cnSubTitle": "使用 Ai 以 10 倍的速度创建更好的 Linkedin 内容"
   },
@@ -203,7 +779,7 @@ export const aiWebsits = [
       "title": "MagicChat AI",
       "subTitle": "Train a ChatGPT-like chatbot for your website",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/2dfe711b904a934f9806aab7b45c1119245c7c30-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.magicchat.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.magicchat.ai/",
       "tag": "#customer support#low-code/no-code",
       "cnSubTitle": "为您的网站训练一个类似 ChatGPT 的聊天机器人"
   },
@@ -211,7 +787,7 @@ export const aiWebsits = [
       "title": "Fry My Deck",
       "subTitle": "Train your pitch with questions from Silicon Valley's best investors and VCs.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/06faa315cb7f5d800752b42d5c632430b90102e3-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.frymydeck.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.frymydeck.com/",
       "tag": "#startup tools",
       "cnSubTitle": "用硅谷最好的投资者和风险投资家的问题来训练你的演讲。"
   },
@@ -219,7 +795,7 @@ export const aiWebsits = [
       "title": "Koe Recast",
       "subTitle": "Transform your voice using AI",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/d7d907a1959a58d719fa6901ff89e41aab0a6b1a-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://koe.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://koe.ai/",
       "tag": "#audio editing",
       "cnSubTitle": "使用 AI 改变你的声音"
   },
@@ -235,7 +811,7 @@ export const aiWebsits = [
       "title": "Bappfy",
       "subTitle": "Online App Builder From Any Website",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/93a6a6f92beb819806b3ce919df083f429f25054-1920x905.png?rect=93,0,1734,905&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.bappfy.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.bappfy.com/",
       "tag": "#low-code/no-code#developer tools",
       "cnSubTitle": "来自任何网站的在线应用程序生成器"
   },
@@ -243,7 +819,7 @@ export const aiWebsits = [
       "title": "Nichely",
       "subTitle": "AI powered topic and keyword research to boost your topical authority.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/fb8f78f4513f6ac296b03036b9cfa41a8eff34e9-1920x901.png?rect=97,0,1726,901&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://nichely.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://nichely.ai/",
       "tag": "#SEO",
       "cnSubTitle": "AI 支持的主题和关键字研究可提高您的主题权威。"
   },
@@ -251,7 +827,7 @@ export const aiWebsits = [
       "title": "Viff.ai",
       "subTitle": "Hotel Review Replier",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/ab09a2e36afc1892435ee2d64b65a89d311771d4-1920x896.png?rect=102,0,1717,896&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.viff.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.viff.ai/",
       "tag": "#customer support",
       "cnSubTitle": "酒店点评回复者"
   },
@@ -259,7 +835,7 @@ export const aiWebsits = [
       "title": "Speakable",
       "subTitle": "AI assistant for World Language & ESL teachers",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/5593aec43c0f455034b66166181d92927dc39bc9-1920x880.png?rect=117,0,1686,880&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://speakableapp.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://speakableapp.com/",
       "tag": "#education assistant",
       "cnSubTitle": "世界语言和 ESL 教师的 AI 助手"
   },
@@ -267,7 +843,7 @@ export const aiWebsits = [
       "title": "Nureply",
       "subTitle": "Effecient and Effortless Cold Emails using AI",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/155f81e77ebe813b5b45956a5a7e22bef214a5e3-1920x897.png?rect=101,0,1719,897&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://nureply.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://nureply.com/",
       "tag": "#email assistant",
       "cnSubTitle": "使用 AI 的高效且轻松的冷电子邮件"
   },
@@ -275,7 +851,7 @@ export const aiWebsits = [
       "title": "Willy",
       "subTitle": "Chat, analyze and manage with Willy, the AI assistant that helps you effortlessly interact with your eCommerce business.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/66375d96fa66240bd0d5bac92f2b86bd2de59b0c-1680x876.png?rect=1,0,1679,876&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://www.triplewhale.com/willy?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://www.triplewhale.com/willy",
       "tag": "#e-commerce",
       "cnSubTitle": "与 Willy 聊天、分析和管理，Willy 是一款人工智能助手，可帮助您毫不费力地与您的电子商务业务互动。"
   },
@@ -283,7 +859,7 @@ export const aiWebsits = [
       "title": "Train Engine",
       "subTitle": "A tool to train Dreambooth models.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/0514a42baf1f295ffd06dca9f524d57df033cd27-1917x895.png?rect=102,0,1715,895&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://trainengine.ai/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://trainengine.ai/",
       "tag": "#image generator#developer tools",
       "cnSubTitle": "训练 Dreambooth 模型的工具。"
   },
@@ -291,7 +867,7 @@ export const aiWebsits = [
       "title": "Query Kitty",
       "subTitle": "Get More Done in Less Time, ChatGPT for the Impatient ones.",
       "img": "https://cdn.sanity.io/images/u0v1th4q/production/671694e7fba1fe675f255cdc589303c8274e376e-1920x899.png?rect=99,0,1723,899&w=640&h=334&auto=format&w=3840&q=75",
-      "link": "https://querykitty.com/?utm_source=futurepedia&utm_medium=marketplace&utm_campaign=futurepedia",
+      "link": "https://querykitty.com/",
       "tag": "#productivity",
       "cnSubTitle": "在更短的时间内完成更多的工作，为不耐烦的人准备的 ChatGPT。"
   },

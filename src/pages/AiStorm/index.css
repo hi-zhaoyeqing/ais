@@ -1,14 +1,19 @@
 #aiStorm {
   width: 100%;
-  height: calc(100% - 60px);
+  height: 100%;
   padding: 24px 5%;
-  box-sizing: border-box;
   overflow: auto;
+  margin: 0 auto;
 }
 #aiStorm .container {
   width: 100%;
-  box-sizing: border-box;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  position: relative;
+}
+.tag {
+  position: absolute;
+  transition: all 0.5s ease-in-out;
+}
+
+.move {
+  transform: translate(-50%, -50%);
 }

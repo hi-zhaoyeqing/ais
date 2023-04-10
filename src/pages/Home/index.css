@@ -1,17 +1,17 @@
 #home {
-    height: calc(100% - 60px);
-    padding-top: 16px;
-    box-sizing: border-box;
-    width: 90%;
+    height: 100%;
+    padding-top: 24px;
+    
+    width: 1200px;
     margin: 0 auto;
   }
   
   #home .container {
-    height: calc(100% - 40px);
+    height: 100%;
     width: 100%;
     margin: 0 auto;
     padding: 24px 0 0;
-    box-sizing: border-box;
+    
     display: flex;
   }
 
@@ -25,7 +25,7 @@
     overflow: auto;
     padding-top: 12px;
     border-right: 4px double #333;
-    box-sizing: border-box;
+    
 }
 
 .card-wrap {

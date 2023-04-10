@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
-import { aiWebsits } from "../../ai";
+import { aiWebsits } from "../../json/ai";
+import { Link } from "react-router-dom";
 import { Input } from "antd";
-import { tags } from "../../aiOthers";
+import { aiTags } from "../../json/aiTags";
 import "../../assets/css/card.css";
 import Loading from "../../componments/Loading";
 import "../../assets/css/switch.css";
@@ -15,16 +16,18 @@ function Home() {
   const [data, setData] = useState([]);
   const [renderedCount, setRenderedCount] = useState(0);
   const containerRef = useRef(null);
-  console.log(aiWebsits.map((item) => {
-    return {
-      "title": item.title,
-      "subTitle": item.subTitle,
-      "img": decodeURIComponent(item.img),
-      "link": item.link,
-      "tag": item.tag,
-      "cnSubTitle":item.cnSubTitle
-    }
-  }))
+  console.log(
+    aiWebsits.map((item) => {
+      return {
+        title: item.title,
+        subTitle: item.subTitle,
+        img: decodeURIComponent(item.img),
+        link: item.link,
+        tag: item.tag,
+        cnSubTitle: item.cnSubTitle,
+      };
+    })
+  );
   useEffect(() => {
     setData(aiWebsits);
     setRenderedCount(PAGE_SIZE);
@@ -98,7 +101,7 @@ function Home() {
             >
               全部分类
             </div>
-            {tags.map((item, index) => {
+            {aiTags.map((item, index) => {
               return (
                 <div
                   onClick={() => {
@@ -137,15 +140,21 @@ function Home() {
                           .map((a) => {
                             return (
                               <span key={item.title + index + a}>
-                                {tags.find((t) => t.en === a).cn}
+                                {aiTags.find((t) => t.en === a)?aiTags.find((t) => t.en === a).cn:a}
                               </span>
                             );
                           })}
                       </p>
                       <p className="priceType">{item.priceType}</p>
-                      <a href={item.link} target="_blank" rel="noreferrer">
+                      <Link
+                        to={{
+                          pathname: "/web",
+                          search: `?url=${encodeURIComponent(item.link)}`,
+                        }}
+                        target="_blank"
+                      >
                         <span>访问</span>
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 );

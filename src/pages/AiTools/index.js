@@ -1,4 +1,4 @@
-import { tools } from "../../aiOthers";
+import { aiTools } from "../../json/aiTools";
 import { Link } from "react-router-dom";
 import Loading from "../../componments/Loading";
 import "../../assets/css/card.css";
@@ -8,9 +8,9 @@ function AiTools() {
   return (
     <Loading>
       <div id="aiTools">
-        <h3>共『{tools.length}』个工具</h3>
+        <h3>共『{aiTools.length}』个工具</h3>
         <div className="container">
-          {tools
+          {aiTools
             .sort((a, b) => {
               return a.isOk ? -1 : b.isOk ? 1 : 0;
             })

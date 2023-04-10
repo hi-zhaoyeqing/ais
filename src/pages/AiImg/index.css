@@ -1,9 +1,10 @@
 #aiImg {
-  width: 100%;
-  height: calc(100% - 60px);
+  width: 1200px;
+  height: 100%;
   padding: 24px 5%;
-  box-sizing: border-box;
+  
   overflow: auto;
+  margin: 0 auto;
 }
 
 .my-masonry-grid {
@@ -21,6 +22,7 @@
   margin-bottom: 16px; /* 添加每个元素的下边距 */
   overflow: hidden;
   border-radius: 16px;
+  background-color: #fff;
 }
 
 .my-masonry-grid_column > div > img {
@@ -33,6 +35,8 @@
   transition: all 0.3s;
   transform: scale(1.2);
 }
+
+
 
 
 

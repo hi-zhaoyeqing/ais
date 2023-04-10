@@ -18,7 +18,7 @@ function Switch() {
 
   const svgCreate = (position)=> {
     let svgLeft =
-      `<svg class="svg_icon" fill="none" viewBox="0 0 132 140" xmlns="http://www.w3.org/2000/svg">
+      `<svg className="svg_icon" fill="none" viewBox="0 0 132 140" xmlns="http://www.w3.org/2000/svg">
 <path d="M110 50.4209L68.7302 25.4209" id="Line1"/>
 <path d="M110 59.498L45.9597 54.498" id="Line2"/>
 <path d="M110 70.4824L46.1323 87.4824" id="Line3"/>
@@ -32,28 +32,28 @@ function Switch() {
 <path d="M110 76.4111L50.2839 116.411" id="Line11"/>
 <path d="M110 61.4995L18.9907 59.4307" id="Line12"/>
 
-<g> <g> <g class="svg_obj"> <path d="M14.6324 5.25L20.9832 16.25C21.5606 17.25 20.8389 18.5 19.6842 18.5H6.98249C5.82778 18.5 5.10609 17.25 5.68344 16.25L12.0343 5.25C12.6116 4.25 14.055 4.25 14.6324 5.25Z" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="3" stroke=` +
+<g> <g> <g className="svg_obj"> <path d="M14.6324 5.25L20.9832 16.25C21.5606 17.25 20.8389 18.5 19.6842 18.5H6.98249C5.82778 18.5 5.10609 17.25 5.68344 16.25L12.0343 5.25C12.6116 4.25 14.055 4.25 14.6324 5.25Z" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="3" stroke=` +
       color[Math.floor(Math.random() * 4)] +
       `></path>
 </g> <animateMotion begin="0s" dur=` +
       animateDur +
       ` repeatCount="1"> <mpath xlink:href="#Line` +
       Math.floor(Math.random() * 6 + 6) +
-      `"></mpath> </animateMotion> </g> </g> <g> <g> <g class="svg_obj"> <circle cx="12" cy="11" r="6.5" stroke-width="3" stroke=` +
+      `"></mpath> </animateMotion> </g> </g> <g> <g> <g className="svg_obj"> <circle cx="12" cy="11" r="6.5" stroke-width="3" stroke=` +
       color[Math.floor(Math.random() * 4)] +
       `></circle> </g> <animateMotion begin="0s" dur=` +
       animateDur +
       ` repeatCount="1"> <mpath xlink:href="#Line` +
       Math.floor(Math.random() * 12 + 1) +
       `"></mpath> </animateMotion> </g> </g> 
- <g> <g> <g class="svg_obj"> <circle cx="12" cy="11" r="6.5" stroke-width="3" stroke=` +
+ <g> <g> <g className="svg_obj"> <circle cx="12" cy="11" r="6.5" stroke-width="3" stroke=` +
       color[Math.floor(Math.random() * 4)] +
       `></circle> </g> <animateMotion begin="0s" dur=` +
       animateDur +
       ` repeatCount="1"> <mpath xlink:href="#Line` +
       Math.floor(Math.random() * 6 + 1) +
       `"></mpath> </animateMotion> </g> </g> 
- <g> <g> <g class="svg_obj"> <circle cx="12" cy="11" r="6.5" stroke-width="3" stroke=` +
+ <g> <g> <g className="svg_obj"> <circle cx="12" cy="11" r="6.5" stroke-width="3" stroke=` +
       color[Math.floor(Math.random() * 4) + 1] +
       `></circle> </g> <animateMotion begin="0s" dur=` +
       animateDur +
@@ -62,7 +62,7 @@ function Switch() {
       `"></mpath> </animateMotion> </g> </g> 
 </svg>`;
     let svgRight =
-      `<svg class="svg_icon" fill="none" viewBox="0 0 132 140"  xmlns="http://www.w3.org/2000/svg" >
+      `<svg className="svg_icon" fill="none" viewBox="0 0 132 140"  xmlns="http://www.w3.org/2000/svg" >
 <path d="M20 54.6191L64.6763 20.6191" id="Line13"/>
 <path d="M20 56.5518L97.7788 20.5518" id="Line14"/>
 <path d="M20 58.5176L90.8684 40.5176" id="Line15"/>
@@ -76,19 +76,19 @@ function Switch() {
 <path d="M20 60.5049L102.93 49.5049" id="Line23"/>
 <path d="M20 75.5303L83.1702 96.5303" id="Line24"/>
 
-<g> <g> <g class="svg_obj"> <path d="M14.6324 5.25L20.9832 16.25C21.5606 17.25 20.8389 18.5 19.6842 18.5H6.98249C5.82778 18.5 5.10609 17.25 5.68344 16.25L12.0343 5.25C12.6116 4.25 14.055 4.25 14.6324 5.25Z" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="3" stroke="#d0d8e3"></path>
+<g> <g> <g className="svg_obj"> <path d="M14.6324 5.25L20.9832 16.25C21.5606 17.25 20.8389 18.5 19.6842 18.5H6.98249C5.82778 18.5 5.10609 17.25 5.68344 16.25L12.0343 5.25C12.6116 4.25 14.055 4.25 14.6324 5.25Z" fill="none" stroke-linecap="square" stroke-linejoin="round" stroke-width="3" stroke="#d0d8e3"></path>
 </g> <animateMotion begin="0s" dur=` +
       animateDur +
       ` repeatCount="1"> <mpath xlink:href="#Line` +
       Math.floor(Math.random() * 12 + 13) +
       `"></mpath> </animateMotion> </g> </g> 
 
-<g> <g> <g class="svg_obj"> <path d="M17.2394 3L7.6162 18.2116M5 5.51355L20.2116 15.1367" stroke="#ff3c41" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> </g> <animateMotion begin="0s" dur=` +
+<g> <g> <g className="svg_obj"> <path d="M17.2394 3L7.6162 18.2116M5 5.51355L20.2116 15.1367" stroke="#ff3c41" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> </g> <animateMotion begin="0s" dur=` +
       animateDur +
       ` repeatCount="1"> <mpath xlink:href="#Line` +
       Math.floor(Math.random() * 12 + 13) +
       `"></mpath> </animateMotion> </g> </g> 
-<g> <g> <g class="svg_obj"> <path d="M17.2394 3L7.6162 18.2116M5 5.51355L20.2116 15.1367" stroke="#acb2c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> </g> <animateMotion begin="0s" dur=` +
+<g> <g> <g className="svg_obj"> <path d="M17.2394 3L7.6162 18.2116M5 5.51355L20.2116 15.1367" stroke="#acb2c0" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/> </g> <animateMotion begin="0s" dur=` +
       animateDur +
       ` repeatCount="1"> <mpath xlink:href="#Line` +
       Math.floor(Math.random() * 12 + 13) +
