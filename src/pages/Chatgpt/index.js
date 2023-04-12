@@ -22,7 +22,7 @@ function Chatgpt() {
       });
       setAqList(curAqList);
       await axios
-        .get(`http://${window.location.hostname}:9000/result?param=${value}`)
+        .get(`http://66.135.10.102:9000/result?param=${value}`)
         .then((res) => {
           console.log(res.data)
           const curAqList1 = [...curAqList];

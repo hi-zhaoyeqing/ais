@@ -2,8 +2,7 @@ import React, { Fragment } from "react";
 import { Route, Routes, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import AiTools from "./pages/AiTools";
-import AiZoo from "./pages/AiZoo";
-import AiStorm from "./pages/AiStorm";
+import AiTag from "./pages/AiTag";
 import AiImg from "./pages/AiImg";
 import Chatgpt from "./pages/Chatgpt";
 import ChatgptPrompts from "./pages/ChatgptPrompts";
@@ -26,12 +25,11 @@ function App() {
       <Fragment>
         <Routes>
           <Route path="/home" element={<Home />}></Route>
-          <Route path="/ai-zoo" element={<AiZoo />}></Route>
           <Route path="/ai-tools" element={<AiTools />}></Route>
           <Route path="/ai-img" element={<AiImg />}></Route>
           <Route path="/chatgpt-prompts" element={<ChatgptPrompts />}></Route>
           <Route path="/chatgpt" element={<Chatgpt />}></Route>
-          <Route path="/ai-storm" element={<AiStorm />}></Route>
+          <Route path="/ai-tag" element={<AiTag />}></Route>
           <Route path="/web" element={<Web />}></Route>
           <Route path="/three-chat" element={<ThreeChat />}></Route>
           <Route

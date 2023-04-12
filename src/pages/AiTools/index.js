@@ -33,9 +33,9 @@ function AiTools() {
                 )
               );
             })}
-          <div style={{ borderRadius: 0,boxShadow: "none",height:0 }} className="card"></div>
-          <div style={{ borderRadius: 0,boxShadow: "none",height:0 }} className="card"></div>
-          <div style={{ borderRadius: 0,boxShadow: "none",height:0 }} className="card"></div>
+          <div style={{ borderRadius: 0,boxShadow: "none",height:0,padding:0 }} className="card"></div>
+          <div style={{ borderRadius: 0,boxShadow: "none",height:0,padding:0 }} className="card"></div>
+          <div style={{ borderRadius: 0,boxShadow: "none",height:0,padding:0 }} className="card"></div>
         </div>
       </div>
     </Loading>

@@ -14,7 +14,7 @@ const Header = () => {
       link: "home",
     },
     {
-      name: "三巨头",
+      name: "Ai 三巨头",
       link: "three-chat",
     },
     {
@@ -22,12 +22,7 @@ const Header = () => {
       link: "ai-img",
     },
     {
-      name: "Ai 动物园",
-      link: "ai-zoo",
-      isHide: true,
-    },
-    {
-      name: "Cgps",
+      name: "Prompts",
       link: "chatgpt-prompts",
     },
     {
@@ -35,8 +30,8 @@ const Header = () => {
       link: "ai-tools",
     },
     {
-      name: "Ai 风暴",
-      link: "ai-storm",
+      name: "Ai 标签云",
+      link: "ai-tag",
     },
     {
       name: "Chatgpt6",

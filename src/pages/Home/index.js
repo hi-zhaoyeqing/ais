@@ -145,7 +145,6 @@ function Home() {
                             );
                           })}
                       </p>
-                      <p className="priceType">{item.priceType}</p>
                       <Link
                         to={{
                           pathname: "/web",
