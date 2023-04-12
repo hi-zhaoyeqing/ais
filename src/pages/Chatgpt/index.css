@@ -1,5 +1,5 @@
 
-#threeChat {
+#chatGpt {
     height: 100%;
     overflow: auto;
     width: 1200px;
@@ -101,3 +101,21 @@
     color: #8c8c8c;
 }
 
+@media screen and (max-width: 600px) {
+    #chatGpt {
+      width: 100%;
+    }
+
+    #chatGpt .header {
+        width: 100%;
+    }
+
+    #chatGpt .header .chatWrap {
+        width: 100%;
+        padding: 0 24px;
+    }
+
+    #chatGpt .aq-container {
+        width: 100%;
+    }
+  }

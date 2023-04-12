@@ -31,7 +31,6 @@ function AiImg() {
     setData(shuffle(Array.from(new Set(aiImgs))).slice(0, 10));
   }, []);
 
-
   const fetchData = async () => {
     if (!hasMore) {
       return;
@@ -44,7 +43,9 @@ function AiImg() {
       return;
     }
     const endIndex = Math.min(startIndex + 15, localData.length);
-    const newData = shuffle(Array.from(new Set(localData.slice(startIndex, endIndex).concat(data))));
+    const newData = shuffle(
+      Array.from(new Set(localData.slice(startIndex, endIndex).concat(data)))
+    );
     setData(newData);
     setHasMore(endIndex < localData.length);
     setPage(page + 1);
@@ -53,12 +54,13 @@ function AiImg() {
 
   const handleScroll = (e) => {
     const bottom =
-      Math.abs(e.target.scrollHeight - e.target.scrollTop - e.target.clientHeight) < 60;
+      Math.abs(
+        e.target.scrollHeight - e.target.scrollTop - e.target.clientHeight
+      ) < 60;
     if (bottom && hasMore && !loading) {
       fetchData();
     }
   };
-
 
   return (
     <Loading>

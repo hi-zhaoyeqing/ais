@@ -71,3 +71,22 @@
       opacity: 0;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    #aiTools {
+      width: 100%;
+    }
+
+    #aiTools a {
+      width: 100%;
+    }
+
+    #aiTools a .card{
+      width: 100%;
+    }
+
+    #aiTools h3 {
+      text-align: center;
+      margin-bottom: 18px;
+    }
+  }

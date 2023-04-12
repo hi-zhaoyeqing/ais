@@ -2,7 +2,7 @@
   width: 1200px;
   height: 100%;
   padding: 24px 5%;
-  
+
   overflow: auto;
   margin: 0 auto;
 }
@@ -36,8 +36,8 @@
   transform: scale(1.2);
 }
 
-
-
-
-
-
+@media screen and (max-width: 600px) {
+  #chatgptPrompts {
+    width: 100%;
+  }
+}

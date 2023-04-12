@@ -1,80 +1,119 @@
 #home {
-    height: 100%;
-    padding-top: 24px;
-    
-    width: 1200px;
-    margin: 0 auto;
+  height: 100%;
+  padding-top: 24px;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+#home .container {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  padding: 24px 0 0;
+  display: flex;
+}
+
+.tag-wrap {
+  width: 160px;
+  padding-right: 30px;
+  margin-right: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow: auto;
+  padding-top: 12px;
+  border-right: 4px double #333;
+}
+
+.card-wrap {
+  flex: 1;
+  height: 100%;
+  overflow: auto;
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 30px;
+}
+
+.tag-wrap div {
+  padding: 6px 12px;
+  background: #fff;
+  margin-bottom: 8px;
+  border-radius: 17px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.tag-wrap div:hover {
+  background: #000;
+  color: #fff;
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.tag-wrap .active {
+  background: #000;
+  color: #fff;
+  box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
+    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.aiWeb {
+  margin-right: 8px;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ipt {
+  width: 600px;
+}
+
+@media screen and (max-width: 600px) {
+  #home {
+    width: 100%;
   }
   
   #home .container {
     height: 100%;
     width: 100%;
-    margin: 0 auto;
-    padding: 24px 0 0;
-    
-    display: flex;
   }
 
-.tag-wrap {
-    width: 160px;
-    padding-right: 30px;
-    margin-right:24px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 100%;
-    overflow: auto;
-    padding-top: 12px;
-    border-right: 4px double #333;
-    
-}
+  .tag-wrap {
+    display: none;
+  }
 
-.card-wrap {
-    flex: 1;
-    height: 100%;
-    overflow: auto;
-}
-
-.card-flex {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding-right: 30px;
-}
-
-.tag-wrap div{
-    padding: 6px 12px;
-    background: #fff;
-    margin-bottom: 8px;
-    border-radius: 17px;
-    cursor: pointer;
-    font-size: 14px;
+  .card {
     width: 100%;
+    margin: 24px;
+  }
+
+  .card-flex {
+    padding-right: 0;
+  }
+
+  .header {
+    display: block;
     text-align: center;
-}
+  }
 
-.tag-wrap div:hover{
-    background: #000;
-    color:#fff;
-    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
-    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
-}
-.tag-wrap .active {
-    background: #000;
-    color:#fff;
-    box-shadow: inset -4px -4px 10px rgba(255, 255, 255, 0.5),
-    inset 4px 4px 10px rgba(0, 0, 0, 0.1);
-}
+  .header h3 {
+    width: 100%;
+  }
 
-.aiWebsits {
-    margin-right: 8px;
-}
+  .header input {
+    width: 80%;
+    margin: 18px auto 0;
+  }
 
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.ipt {
-    width: 600px;
+  .container .card:nth-child(4n){
+    margin: 24px;
+  }
 }

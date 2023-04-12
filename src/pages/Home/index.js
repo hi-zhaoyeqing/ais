@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
-import { aiWebsits } from "../../json/ai";
+import { aiWeb } from "../../json/aiWeb";
 import { Link } from "react-router-dom";
 import { Input } from "antd";
 import { aiTags } from "../../json/aiTags";
@@ -8,7 +8,7 @@ import Loading from "../../componments/Loading";
 import "../../assets/css/switch.css";
 import "./index.css";
 
-const PAGE_SIZE = 12; // 每页加载的数据量
+const PAGE_SIZE = 12;
 function Home() {
   const [active, setActive] = useState(-1);
   const [value, setValue] = useState("");
@@ -16,20 +16,70 @@ function Home() {
   const [data, setData] = useState([]);
   const [renderedCount, setRenderedCount] = useState(0);
   const containerRef = useRef(null);
-  console.log(
-    aiWebsits.map((item) => {
-      return {
-        title: item.title,
-        subTitle: item.subTitle,
-        img: decodeURIComponent(item.img),
-        link: item.link,
-        tag: item.tag,
-        cnSubTitle: item.cnSubTitle,
-      };
-    })
-  );
+  const a = [
+    "https://vidyo.ai",
+    "https://gocharlie.ai",
+    "https://sivi.ai",
+    "https://neuroflash.com",
+    "https://www.rephrase.ai",
+    "https://www.trymaverick.com",
+    "https://marketplace.visualstudio.com/items",
+    "https://www.adcreative.ai/",
+    "https://www.flowjin.com/",
+    "https://www.sheetai.app/",
+    "https://blocksurvey.io/ai-surveys/",
+    "https://excuses.ai/",
+    "https://avc.ai/",
+    "https://gradients.ray.st/",
+    "https://www.digitalfirst.ai/",
+    "https://betterwriter.ai/",
+    "https://forthewall.art/",
+    "https://www.hypotenuse.ai/",
+    "https://artshops.xyz/",
+    "https://www.asksomi.app/",
+    "https://photoshot.app/",
+    "https://www.personacardai.com/",
+    "https://deepdreamgenerator.com/",
+    "https://artistator.com/",
+    "https://www.legalquestions.help/",
+    "https://artsio.xyz/",
+    "https://aivatarapp.com/",
+    "https://www.clip.audio/",
+    "https://www.giftgenie.ai/",
+    "https://www.assetsai.art/",
+    "https://www.kive.ai/canvas",
+    "https://contentbot.ai/",
+    "https://photosonic.writesonic.com/",
+    "https://studio.themetavoice.xyz/",
+    "https://make3d.app/",
+    "https://www.gomoonbeam.com/",
+    "https://amazing.photos/",
+    "https://hyperwriteai.com/",
+    "https://www.jotapp.tech/",
+    "https://thispersondoesnotexist.com/",
+    "https://www.jasper.ai/",
+    "https://www.metagenieai.com/",
+    "https://www.aiprofilepictures.com/",
+    "https://fliki.ai/",
+    "https://www.heropack.me/"
+  ];
+  console.log(aiWeb.filter(item => a.includes(item.link)));
+  console.log(aiWeb.filter(item => !a.includes(item.link)));
+
+  // console.log(
+  //   aiWeb.map((item) => {
+  //     return {
+  //       title: item.title,
+  //       subTitle: item.subTitle,
+  //       img: decodeURIComponent(item.img),
+  //       link: item.link,
+  //       tag: item.tag,
+  //       cnSubTitle: item.cnSubTitle,
+  //     };
+  //   })
+  // );
   useEffect(() => {
-    setData(aiWebsits);
+    setData(aiWeb);
     setRenderedCount(PAGE_SIZE);
   }, []);
 
@@ -51,7 +101,7 @@ function Home() {
   const onChange = (e) => {
     setValue(e.target.value);
     if (!e.target.value) {
-      setData(aiWebsits);
+      setData(aiWeb);
     }
   };
 
@@ -61,11 +111,9 @@ function Home() {
       setRenderedCount(PAGE_SIZE);
       containerRef.current.scrollTop = 0;
       if (value) {
-        setData(
-          aiWebsits.filter((d) => (d.title + d.cnSubTitle).includes(value))
-        );
+        setData(aiWeb.filter((d) => (d.title + d.cnSubTitle).includes(value)));
       } else {
-        setData(aiWebsits);
+        setData(aiWeb);
       }
     }
   };
@@ -74,9 +122,7 @@ function Home() {
     <Loading>
       <div id="home">
         <div className="header">
-          <h3 className="aiWebsits">
-            已收录：『{aiWebsits.length}』 个 Ai 网站
-          </h3>
+          <h3 className="aiWeb">已收录：『{aiWeb.length}』 个 Ai 网站</h3>
           <Input
             className="ipt"
             value={value}
@@ -92,7 +138,7 @@ function Home() {
             <div
               onClick={() => {
                 setActive(-1);
-                setData(aiWebsits);
+                setData(aiWeb);
                 setRenderedCount(PAGE_SIZE);
                 containerRef.current.scrollTop = 0;
               }}
@@ -109,7 +155,7 @@ function Home() {
                     setRenderedCount(PAGE_SIZE);
                     containerRef.current.scrollTop = 0;
                     setData(
-                      aiWebsits.filter((d) => d.tag && d.tag.includes(item.en))
+                      aiWeb.filter((d) => d.tag && d.tag.includes(item.en))
                     );
                   }}
                   className={active === index ? "active" : ""}
@@ -140,7 +186,9 @@ function Home() {
                           .map((a) => {
                             return (
                               <span key={item.title + index + a}>
-                                {aiTags.find((t) => t.en === a)?aiTags.find((t) => t.en === a).cn:a}
+                                {aiTags.find((t) => t.en === a)
+                                  ? aiTags.find((t) => t.en === a).cn
+                                  : a}
                               </span>
                             );
                           })}

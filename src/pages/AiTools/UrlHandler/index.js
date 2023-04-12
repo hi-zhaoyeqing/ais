@@ -49,7 +49,7 @@ function UrlHandler() {
             placeholder="请输入链接"
           />
         </div>
-        <Space align="center">
+        <Space align="center" wrap>
           <Button size="large" type="primary" onClick={handler}>
             解析
           </Button>

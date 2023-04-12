@@ -1,18 +1,16 @@
 #aiStorm {
-  width: 100%;
+  width: 1200px;
   height: 100%;
-  padding: 24px 5%;
   overflow: auto;
   margin: 0 auto;
-}
-#aiStorm .container {
-  width: 100%;
-  position: relative;
+  padding: 24px;
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
+  justify-content: center;
 }
-#aiStorm .container .tag {
-  transition: all 0.5s ease-in-out;
-  display: block;
+
+@media screen and (max-width: 600px) {
+  #aiStorm {
+    width: 100%;
+  }
 }

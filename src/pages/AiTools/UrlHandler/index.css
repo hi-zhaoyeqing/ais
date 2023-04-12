@@ -25,3 +25,9 @@
 .qrcode {
     text-align: center;
 }
+
+@media screen and (max-width: 600px) {
+    #urlHandler {
+      width: 100%;
+    }
+  }
