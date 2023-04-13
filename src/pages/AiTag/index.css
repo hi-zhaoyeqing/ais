@@ -4,9 +4,13 @@
   overflow: auto;
   margin: 0 auto;
   padding: 24px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+}
+
+#aiStorm p {
+  margin-bottom: 10px;
 }
 
 @media screen and (max-width: 600px) {

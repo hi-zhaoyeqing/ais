@@ -4,6 +4,7 @@ import Home from "./pages/Home";
 import AiTools from "./pages/AiTools";
 import AiTag from "./pages/AiTag";
 import AiImg from "./pages/AiImg";
+import Vip from "./pages/Vip";
 import Chatgpt from "./pages/Chatgpt";
 import ChatgptPrompts from "./pages/ChatgptPrompts";
 import GetWebDomList from "./pages/AiTools/GetWebDomList";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/chatgpt" element={<Chatgpt />}></Route>
           <Route path="/ai-tag" element={<AiTag />}></Route>
           <Route path="/web" element={<Web />}></Route>
+          <Route path="/vip" element={<Vip />}></Route>
           <Route path="/three-chat" element={<ThreeChat />}></Route>
           <Route
             path="/ai-tools/get-web-dom-list"

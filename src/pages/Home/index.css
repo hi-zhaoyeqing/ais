@@ -28,7 +28,10 @@
 .card-wrap {
   flex: 1;
   height: 100%;
+  -webkit-overflow-scrolling: auto;
+  -webkit-overflow-scrolling: touch;
   overflow: auto;
+
 }
 
 .card-flex {
@@ -70,6 +73,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.5;
+  position: static;
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+  z-index: 99;
+  width: 100%;
+  padding: 12px;
+  border-bottom: 1px solid #ccc;
 }
 
 .ipt {
@@ -91,9 +107,10 @@
   }
 
   .card {
-    width: 100%;
-    margin: 24px;
+    width: 80%;
+    margin: 24px auto;
   }
+
 
   .card-flex {
     padding-right: 0;
@@ -114,6 +131,6 @@
   }
 
   .container .card:nth-child(4n){
-    margin: 24px;
+    margin: 24px auto;
   }
 }

@@ -1,3 +1,6 @@
 module.exports = {
-    reactScriptsVersion: "react-scripts"
-}
+  reactScriptsVersion: "react-scripts",
+  devServer: {
+    port: 8080,
+  },
+};

@@ -1,7 +1,8 @@
 .navWrap {
+  height: 100%;
+  width: 100%;
   position: absolute;
-  z-index: 9;
-  right: 0;
+  z-index: 100;
 }
 .con {
   /* 弹性布局 水平、垂直居中 */
@@ -27,15 +28,15 @@
   /* 渐变背景 */
   background: linear-gradient(200deg, #ec77ab, #7873f5);
   /* 将元素剪切为一个圆形 【25px表示圆的半径】 【calc(100% - 45px) 45px表示圆心】 */
-  clip-path: circle(25px at calc(100% - 49px) 49px);
+  clip-path: circle(25px at calc(100% - 45px) 45px);
   /* 过渡动画 */
   transition: all 0.3s ease-in-out;
 }
 .menu-btn {
   /* 绝对定位 */
   position: absolute;
-  right: 24px;
-  top: 24px;
+  right: 20px;
+  top: 20px;
   z-index: 2;
   text-align: center;
   line-height: 50px;
@@ -72,7 +73,6 @@
   transform: translate(-50%, -50%);
   list-style: none;
   text-align: center;
-  width: 100%;
 }
 .wrapper ul li {
   margin: 30px 0px;

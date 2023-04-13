@@ -8,7 +8,7 @@ import Loading from "../../componments/Loading";
 import "../../assets/css/switch.css";
 import "./index.css";
 
-const PAGE_SIZE = 12;
+const PAGE_SIZE = 48;
 function Home() {
   const [active, setActive] = useState(-1);
   const [value, setValue] = useState("");
@@ -16,83 +16,70 @@ function Home() {
   const [data, setData] = useState([]);
   const [renderedCount, setRenderedCount] = useState(0);
   const containerRef = useRef(null);
-  const a = [
-    "https://vidyo.ai",
-    "https://gocharlie.ai",
-    "https://sivi.ai",
-    "https://neuroflash.com",
-    "https://www.rephrase.ai",
-    "https://www.trymaverick.com",
-    "https://marketplace.visualstudio.com/items",
-    "https://www.adcreative.ai/",
-    "https://www.flowjin.com/",
-    "https://www.sheetai.app/",
-    "https://blocksurvey.io/ai-surveys/",
-    "https://excuses.ai/",
-    "https://avc.ai/",
-    "https://gradients.ray.st/",
-    "https://www.digitalfirst.ai/",
-    "https://betterwriter.ai/",
-    "https://forthewall.art/",
-    "https://www.hypotenuse.ai/",
-    "https://artshops.xyz/",
-    "https://www.asksomi.app/",
-    "https://photoshot.app/",
-    "https://www.personacardai.com/",
-    "https://deepdreamgenerator.com/",
-    "https://artistator.com/",
-    "https://www.legalquestions.help/",
-    "https://artsio.xyz/",
-    "https://aivatarapp.com/",
-    "https://www.clip.audio/",
-    "https://www.giftgenie.ai/",
-    "https://www.assetsai.art/",
-    "https://www.kive.ai/canvas",
-    "https://contentbot.ai/",
-    "https://photosonic.writesonic.com/",
-    "https://studio.themetavoice.xyz/",
-    "https://make3d.app/",
-    "https://www.gomoonbeam.com/",
-    "https://amazing.photos/",
-    "https://hyperwriteai.com/",
-    "https://www.jotapp.tech/",
-    "https://thispersondoesnotexist.com/",
-    "https://www.jasper.ai/",
-    "https://www.metagenieai.com/",
-    "https://www.aiprofilepictures.com/",
-    "https://fliki.ai/",
-    "https://www.heropack.me/"
-  ];
-  console.log(aiWeb.filter(item => a.includes(item.link)));
-  console.log(aiWeb.filter(item => !a.includes(item.link)));
 
-  // console.log(
-  //   aiWeb.map((item) => {
-  //     return {
-  //       title: item.title,
-  //       subTitle: item.subTitle,
-  //       img: decodeURIComponent(item.img),
-  //       link: item.link,
-  //       tag: item.tag,
-  //       cnSubTitle: item.cnSubTitle,
-  //     };
-  //   })
-  // );
+  const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      console.log(window.scrollY);
+      if (window.scrollY > 80) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+  console.log(
+    aiWeb.map((item,index) => (index+1)+"."+item.cnSubTitle ).join(""))
+  console.log(
+    aiWeb.map((item) => {
+      return {
+        title: item.title,
+        subTitle: item.subTitle,
+        img: decodeURIComponent(item.img),
+        link: item.link,
+        tag: item.tag,
+        cnSubTitle: item.cnSubTitle,
+      };
+    })
+  );
   useEffect(() => {
     setData(aiWeb);
     setRenderedCount(PAGE_SIZE);
   }, []);
 
-  function handleScroll() {
-    const { scrollHeight, scrollTop, clientHeight } = containerRef.current;
-    if (
-      scrollTop + clientHeight >= scrollHeight - 162 &&
-      renderedCount < data.length
-    ) {
-      // 滚动到底部，加载更多数据
-      setRenderedCount(Math.min(renderedCount + PAGE_SIZE, data.length));
+  // function handleScroll() {
+  //   const { scrollHeight, scrollTop, clientHeight } = containerRef.current;
+  //   if (
+  //     scrollTop + clientHeight >= scrollHeight - 162 &&
+  //     renderedCount < data.length
+  //   ) {
+  //     // 滚动到底部，加载更多数据
+  //     setRenderedCount(Math.min(renderedCount + PAGE_SIZE, data.length));
+  //   }
+  // }
+
+  useEffect(() => {
+    function handleScroll() {
+      const { scrollHeight, scrollTop, clientHeight } = document.documentElement;
+      if (
+        scrollTop + clientHeight >= scrollHeight - 162 &&
+        renderedCount < data.length
+      ) {
+        // 滚动到底部，加载更多数据
+        setRenderedCount(Math.min(renderedCount + PAGE_SIZE, data.length));
+      }
     }
-  }
+
+    window.addEventListener('scroll', handleScroll);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [renderedCount, data]);
 
   const visibleData = useMemo(() => {
     return data.slice(0, renderedCount);
@@ -121,7 +108,7 @@ function Home() {
   return (
     <Loading>
       <div id="home">
-        <div className="header">
+        <div className={isFixed?"header fixed":"header"}>
           <h3 className="aiWeb">已收录：『{aiWeb.length}』 个 Ai 网站</h3>
           <Input
             className="ipt"
@@ -166,7 +153,7 @@ function Home() {
               );
             })}
           </div>
-          <div className="card-wrap" onScroll={handleScroll} ref={containerRef}>
+          <div className="card-wrap">
             <div className="card-flex">
               {visibleData.map((item, index) => {
                 return (

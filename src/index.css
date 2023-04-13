@@ -9,7 +9,8 @@ body {
   font-family: "DynaPuff", cursive;
 }
 
-ul,li {
+ul,
+li {
   list-style: none;
 }
 
@@ -23,15 +24,27 @@ a {
   box-sizing: border-box;
 }
 
-body,html,#root {
+body,
+html,
+#root {
   width: 100%;
-  height: 100%;
-  overflow: hidden;
-  background-image: linear-gradient(45deg, #FFDEE9 0%, #B5FFFC 100%);
+  padding-top: 0;
+  /* background-image: linear-gradient(45deg, #FFDEE9 0%, #B5FFFC 100%); */
+  padding-top: env(safe-area-inset-top); /* 顶部安全区域高度 */
+  padding-bottom: env(safe-area-inset-bottom); /* 底部安全区域高度 */
 }
 
 #iframe {
   width: 100%;
   height: 100%;
   border: 0;
+}
+
+@media screen and (max-width: 600px) {
+  /* 对于支持 hover 的设备，禁用所有元素的 hover 效果 */
+  .card:hover,
+  .card .contentBx a:hover {
+    box-shadow: -2px -2px 20px rgba(255, 255, 255, 1),
+      6px 6px 20px rgba(0, 0, 0, 0.3) !important;
+  }
 }

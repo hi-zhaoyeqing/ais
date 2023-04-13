@@ -1,0 +1,36 @@
+#vip {
+  width: 1200px;
+  height: 100%;
+  padding: 24px 5%;
+  overflow: auto;
+  margin: 0 auto;
+}
+
+#vip .ipt-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#vip .ipt-wrap .select {
+width: 200px;
+}
+
+#vip .ipt-wrap .ipt {
+  width: 600px;
+  margin: 0 18px;
+}
+
+#vip .iframe {
+  width: 800px;
+  height: 450px;
+  background: #000;
+  margin: 30px auto;
+}
+
+
+@media screen and (max-width: 600px) {
+  #chatgptPrompts {
+    width: 100%;
+  }
+}
